@@ -10,14 +10,14 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var dataBinding : ActivityMainBinding
 
-    private val myModel : Model = Model("Hello @altruism Stunning!!")
+    private val myModel : Model = Model()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         dataBinding = DataBindingUtil.setContentView(this, R.layout.activity_main)
 
         dataBinding.model = myModel
-        myModel.wife = "Hello.. You are valued"
+//        myModel.wife = "Hello.. You are valued"
 
     }
 }
